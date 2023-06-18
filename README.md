@@ -1,3 +1,5 @@
+Hello! :) Thank you for reading me. Please read thoroughly to understand the scope of the game and the functionality. 
+
 **Guessing Game Web App**
 Welcome to the Guessing Game web app repository! This project is a web application that challenges users to guess an integer within a certain number of tries. If they guess the correct integer, they win the game!
 
