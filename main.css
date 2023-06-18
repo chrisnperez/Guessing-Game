@@ -1,0 +1,198 @@
+/* Write your CSS code in this file */
+
+body {
+    background-image: url(https://wallpaperaccess.com/full/1385482.jpg);
+    background-size: 300vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* #lp-header {
+    display: flex;
+    justify-content: center;
+    font-family: Rubik Mono One;
+    font-size: 3.5em;
+} */
+
+/* vvvv this is from the animation generator */
+.ml3 {
+    display: flex;
+    justify-content: center;
+    font-family: Rubik Mono One;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.interactive-countainer {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    overflow: auto;
+    border-radius: 20px;
+    height: 42vh;
+    width: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6a3e5f;
+    font-size: 1em;
+    font-family: Rubik Mono One;
+    box-shadow: 1px 10px 32px 4px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 1px 10px 32px 4px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 1px 10px 32px 4px rgba(0, 0, 0, 0.74);
+}
+
+.plr-guess-ctnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a3e5f;
+    height: 5vh;
+    margin-top: 45px;
+}
+
+#guess-pop-up {
+    display: flex;
+    font-size: 1.15em;
+    padding-bottom: 30px;
+}
+
+.guess-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.guess-history {
+    display: flex;
+    margin-right: 20px;
+}
+
+.hint-pop-up {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text] {
+    background-color: lightgray;
+    height: 6em;
+    width: 6em;
+    border-radius: 100px;
+    border-style: solid 1px black;
+    font-family: Rubik Mono One;
+    font-size: 1.5em;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(43, 43, 64, 1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(43, 43, 64, 1);
+    box-shadow: 0px 0px 15px 0px rgba(43, 43, 64, 1);
+}
+
+#submit-button {
+    height: 4em;
+    width: 4em;
+    border-radius: 100px;
+    font-family: Rubik Mono One;
+    text-align: center;
+    font-size: 1em;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+    background-color: #8979a8
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(36, 43, 128, 1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(36, 43, 128, 1);
+    box-shadow: 0px 0px 8px 0px rgba(36, 43, 128, 1);
+
+}
+
+#hint-button {
+    width: 5em;
+    border-radius: 10%;
+    font-family: Rubik Mono One;
+    text-align: center;
+    font-size: 1em;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+    background-color: lightgray;
+}
+
+#hint-button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 5px 0px rgb(95, 98, 128);
+    -moz-box-shadow: 0px 3px 5px 0px rgb(95, 98, 128);
+    box-shadow: 0px 3px 5px 0px rgb(95, 98, 128);
+    ;
+    background-color: lightgray
+}
+
+.hint {
+    padding-top: 10px;
+}
+
+#display-hints {
+    padding-top: 25px;
+}
+
+
+#play-agn-button {
+    width: 10em;
+    border-radius: 10%;
+    font-family: Rubik Mono One;
+    text-align: center;
+    font-size: 1em;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+    background-color: lightgray;
+}
+
+#play-agn-button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 5px 0px rgb(95, 98, 128);
+    -moz-box-shadow: 0px 3px 5px 0px rgb(95, 98, 128);
+    box-shadow: 0px 3px 5px 0px rgb(95, 98, 128);
+    ;
+    background-color: lightgray
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+#rules-container {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    flex-direction: row;
+    margin-top: 40px;
+    border-radius: 20px;
+    height: 15vh;
+    width: 73vh;
+    background-color: #6a3e5f;
+    font-size: .8em;
+    font-family: Rubik Mono One;
+    box-shadow: 1px 10px 32px 4px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 1px 10px 32px 4px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 1px 10px 32px 4px rgba(0, 0, 0, 0.74);
+}
+
+#rules-header {
+    display: flex;
+    justify-content: center;
+}
+
+#rules-text-wrap {
+    text-align: center;
+}

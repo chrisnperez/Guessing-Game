@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- the MAIN.CSS file is linked here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&family=Open+Sans&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
+
+</head>
+<header>
+  <!-- <h1 id="lp-header">My Guessing Game</h1> -->
+  <h1 class="ml3">The//Guessing.Game;</h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!-- ^^^^ I took this script from an online generator to help me animate the h1 tag ^^^^ -->
+</header>
+
+<body>
+  <section class="interactive-countainer">
+    <div>
+      <p id="guess-pop-up">Guess a number from 1 to 100</p>
+    </div>
+    <div class="input-ctnr">
+      <div class="plr-inputs">
+        <input type="text" class="input-field" id="plr-guess-field" placeholder="guess" maxlength="3">
+        <input type="button" id="submit-button" class="sub-button" value=go>
+      </div>
+    </div>
+
+    <section class="plr-guess-ctnr">
+      <div class="guess-history"> Previous Guesses: </div>
+      <div class="guess-list">
+        <li id="plr-guess-one"> - </li>
+        <li id="plr-guess-two"> - </li>
+        <li id="plr-guess-three"> - </li>
+        <li id="plr-guess-four"> - </li>
+        <li id="plr-guess-five"> - </li>
+      </div>
+    </section>
+
+    <div class="play-again">
+      <button id="play-agn-button"> Play Again </button>
+    </div>
+    <div class="hint">
+      <button id="hint-button"> Hint </button>
+    </div>
+
+    <section id="display-hints"> </section>
+  </section>
+
+  <section id="rules-container">
+    <div>
+      <h1 id="rules-header">Rules: </h1>
+      <p id="rules-text-wrap">The player must guess the correct number within 5 tries. If the player guesses the right
+        number, they win! The dashboard will provide a hint if you are near or
+        far from the target number. If the player does not succeed, you must press play
+        again to reset. </p>
+      <ul>
+        <li>1. In order to guess, type in guess in the "Guess" cirlce and press go.</li>
+        <li>2. Toggle the hint button if you need help.</li>
+      </ul>
+    </div>
+  </section>
+  <script src='js/guessing-game.js'></script>
+  <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+</body>
+
+</html>
