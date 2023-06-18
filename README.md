@@ -3,10 +3,10 @@ Hello! :) Thank you for reading me. Please read thoroughly to understand the sco
 **Guessing Game Web App**
 Welcome to the Guessing Game web app repository! This project is a web application that challenges users to guess an integer within a certain number of tries. If they guess the correct integer, they win the game!
 
-**Features**
-The Guessing Game web app offers the following features:
+**Features:**
 
-**User-friendly Interface:** The web app provides a clean and intuitive interface for users to interact with.
+**User-friendly Interface:** 
+The web app provides a clean and intuitive interface for users to interact with.
 
 **Guessing Functionality:** Users can enter their guesses for the target integer within the specified range.
 
